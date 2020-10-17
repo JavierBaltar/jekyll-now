@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Installing AWX on Centos7
 date: "2019-01-24T22:40:32.169Z"
 description: Host an AWX (Ansible Tower) server on a Google Cloud VM.
