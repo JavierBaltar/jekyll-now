@@ -1,7 +1,8 @@
 ---
 title: Ansible Getting Started
 date: "2018-05-28T22:40:32.169Z"
-description: Getting started on Ansible Engine features.
+description: Getting started on Ansible Engine features
+layout: post
 ---
 
 This post includes some bits around Ansible Engine fundamentals. 
