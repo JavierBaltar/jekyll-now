@@ -48,7 +48,7 @@ This is our small project folder tree:
 └── vpc.tf
 
 ```
-#
+
 
 The s3 folder files will create an S3 bucket which is used to store terraform state.
 
@@ -65,7 +65,7 @@ In this case, file is the option I have chosen:
 ```bash 
 terraform apply -var-file=terraform/production.tfvars
 ```
-#
+
 As shown below, the ```terraform.tfvars``` file contains variables values for the AWS credentials, bucket name, region and tags for identifying my resources. 
 
 
@@ -87,7 +87,7 @@ vpc_region="eu-west-1"
 tag_company_name="garagelab"
 tag_environment_name="dev"
 ```
-#
+
 The ```variables.tf``` file looks as follows: 
 
 ```bash
@@ -126,7 +126,7 @@ variable "s3_backend" {
   description = "S3 Bucket where the Terraform state is stored"
 }
 ```
-#
+
 Finally, the ```s3backend.tf``` file constains the instruction for creating the S3 bucket. 
 
 ```bash
@@ -141,7 +141,7 @@ resource "aws_s3_bucket" "bucket" {
   bucket = "${var.s3_backend}"
 }
 ```
-#
+
 Once ```terraform plan``` is executed, the AWS S3 bucket is created. 
 
 ![]({{ site.baseurl }}/images/terraform-create-s3-bucket.png)
@@ -165,7 +165,7 @@ vpc_region="eu-west-1"
 tag_company_name="garagelab"
 tag_environment_name="dev"
 ```
-#
+
 ```bash
 cat variables.tf
 # main creds for AWS connection
@@ -203,7 +203,7 @@ variable "dynamodb_table_backend" {
 }
 
 ```
-#
+
 ```bash
 cat dynamodbbackend.tf
 provider "aws" {
@@ -223,7 +223,7 @@ resource "aws_dynamodb_table" "terraform_state_lock" {
   }
 }
 ```
-#
+
 Let´s execute terraform in order to create the Dynamodb table. 
 ```bash
 terraform apply
@@ -274,12 +274,12 @@ aws_dynamodb_table.terraform_state_lock: Creation complete after 5s [id=terrafor
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
-#
+
 The Dynamodb table appears in the AWS console. 
 
 ![]({{ site.baseurl }}/images/terraform-create-dynamodb-table.png)
 
-#
+
 Completing the steps above, our backend is ready to store the Terraform state. 
 
 ## AWS VPC Deployment
@@ -294,7 +294,7 @@ The Terraform backend is ready so it´s time to create the VPC resources, which 
 
 
 ![]({{ site.baseurl }}/images/terraform-vpc-architecture.png)
-#
+
 This is the piece of code which creates the resources described above.
 ```bash
 cat vpc.tf
@@ -471,7 +471,7 @@ output "vpc_private_sg_id" {
 }
 
 ```
-#
+
 In the following blog entries, we will dig further into the Terraform option as well as how interwork with Ansible for configuration management purposes. 
 
 
