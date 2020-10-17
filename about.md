@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Written by Javier Baltar , engineer prone to explore and expand horizons.
 
 ### More Information
 
