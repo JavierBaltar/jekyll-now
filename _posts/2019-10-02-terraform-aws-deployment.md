@@ -1,6 +1,7 @@
 ---
 title: Terraform AWS deployment
 date: "2019-10-02T10:46:37.121Z"
+layout: post
 description: Infrastructure as code in AWS with Terraform
 --- 
 
