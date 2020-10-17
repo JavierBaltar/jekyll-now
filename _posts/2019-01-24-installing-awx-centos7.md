@@ -258,7 +258,8 @@ REST APIs provide access to resources (data entities) via URI paths.
 
 You can visit the AWX REST API in a web browser at http://<AWX Server IP>/api/ as shown below:
   
-![](./awx-api.png)
+![]({{ site.baseurl }}/images/awx-api.png)
+
 
 As an example, the following curl command retrieves the list of AWX Job templates provisioned
 ```bash
