@@ -15,7 +15,7 @@ As a first step, the architecture depicted below will be rolled out. This means:
 - Creating an AWS Dynamodb for access locking.
 - Deploying an AWS VPC using Terraform. 
 
-![](./terraform-ansible-architecture.png)
+![]({{ site.baseurl }}/images/terraform-ansible-architecture.png)
 
 ## Terraform Fundamentals
 I recommend you to read the following guide: https://learn.hashicorp.com/terraform/getting-started/build for getting started with Terraform. 
@@ -144,7 +144,7 @@ resource "aws_s3_bucket" "bucket" {
 #
 Once ```terraform plan``` is executed, the AWS S3 bucket is created. 
 
-![](./terraform-create-s3-bucket.png)
+![]({{ site.baseurl }}/images/terraform-create-s3-bucket.png)
 
 Similarly, the Dynamodb folder content creates a dynamodb table which is used for locking terraform configuration execution.
 
@@ -277,7 +277,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 #
 The Dynamodb table appears in the AWS console. 
 
-![](./terraform-create-dynamodb-table.png)
+![]({{ site.baseurl }}/images/terraform-create-dynamodb-table.png)
 
 #
 Completing the steps above, our backend is ready to store the Terraform state. 
@@ -293,7 +293,7 @@ The Terraform backend is ready so it´s time to create the VPC resources, which 
 - Security group for private subnet instances. 
 
 
-![](./terraform-vpc-architecture.png)
+![]({{ site.baseurl }}/images/terraform-vpc-architecture.png)
 #
 This is the piece of code which creates the resources described above.
 ```bash
