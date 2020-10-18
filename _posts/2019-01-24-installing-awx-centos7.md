@@ -5,7 +5,7 @@ date: "2019-01-24T22:40:32.169Z"
 description: Host an AWX (Ansible Tower) server on a Google Cloud VM.
 ---
 ## Introduction
-AWX https://github.com/ansible/awx provides a web-based user interface, REST API, and task engine built on top of Ansible. It is the upstream project for Tower, a commercial derivative of AWX. 
+[AWX](https://github.com/ansible/awx) provides a web-based user interface, REST API, and task engine built on top of Ansible. It is the upstream project for Tower, a commercial derivative of AWX. 
 
 ## AWX Installation
 The goal of this post is to install AWX in a CentOS virtual machine hosted on Google Cloud. 
