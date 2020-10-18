@@ -1,8 +1,10 @@
 ---
 title: Ansible ServiceNow Integration
 date: "2018-08-29T22:40:32.169Z"
+layout: post
 description: Automating workflows with ServiceNow and Ansible API.
 ---
+Automating workflows with ServiceNow and Ansible API.
 
 ## Introduction
 ServiceNow https://www.servicenow.com is an Information Technology Service Management suite, which provides five major services:
@@ -21,14 +23,14 @@ In order to run AWX playbooks from ServiceNow you have to create the Ansible AWX
 #### Create ServiceNow AWX endpoint
 The workflow is just running a "hello world" playbook but it can trigger any playbook available. 
 
-![](./servicenow-workflow.png)
+![]({{ site.baseurl }}/images/servicenow-workflow.png)
 
 
 #### Order your request
-![](./servicenow-order.png)
+![]({{ site.baseurl }}/images/servicenow-order.png)
 
 #### AWX Playbook is executed 
-![](./servicenow-awx.png)
+![]({{ site.baseurl }}/images/servicenow-awx.png)
 
 
 ## Related
