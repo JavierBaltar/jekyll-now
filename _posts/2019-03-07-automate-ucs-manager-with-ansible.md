@@ -1,6 +1,7 @@
 ---
 title: Automate UCS Manager configuration with Ansible
 date: "2019-03-07T23:46:37.121Z"
+layout: post
 description: Ansible playbooks for configuring Cisco UCS Manager.  
 thumbnail: " "
 --- 
@@ -12,47 +13,47 @@ Management of the system devices is handled by the Cisco UCS Manager software em
 
 Don´t panic if there is no UCS Manager around. Some of the examples below are executed upon Cisco Devnet sandboxes: https://developer.cisco.com/site/sandbox/ 
 
-![](./cisco-devnet-sandboxes.png)
+![]({{ site.baseurl }}/images/cisco-devnet-sandboxes.png)
 
 Once your lab is reserved, the VPN credentials are sent by email as shown below:
 
-![](./cisco-devnet-details.png)
+![]({{ site.baseurl }}/images/cisco-devnet-details.png)
 
 Before connecting from your local laptop to the Devnet sandbox, you have to set up the VPN connection with the details provided above. 
 
-![](./cisco-anyconnect-vpn.png)
+![]({{ site.baseurl }}/images/cisco-anyconnect-vpn.png)
 
 In order to interwork with UCS Manager, there is a Python dependency required. The "ucsmsdk" must be installed:
 
-![](./ansible-module-dependencies.png)
+![]({{ site.baseurl }}/images/ansible-module-dependencies.png)
 
 For testing purposes, I have created the inventory file below including the UCS Manager credentials. 
 
-![](./ansible-inventory.png)
+![]({{ site.baseurl }}/images/ansible-inventory.png)
 
 The following playbook configures an address pool in UCS. 
 
-![](./ansible-playbook.png)
+![]({{ site.baseurl }}/images/ansible-playbook.png)
 
 Running the playbook: 
 ```bash
 ansible-playbook create-pool-yaml -i inventory -vvv
 ```
-![](./ansible-playbook-execution.png)
+![]({{ site.baseurl }}/images/ansible-playbook-execution.png)
 
 You can establish an SSH connection towards UCS Manager and check that the pool is created: 
 
-![](./ansible-validate-changes.png)
+![]({{ site.baseurl }}/images/ansible-validate-changes.png)
 
 Similarly, the following playbook creates a VLAN. 
 
-![](./ansible-playbook-create-vlan.png)
+![]({{ site.baseurl }}/images/ansible-playbook-create-vlan.png)
 
 Running the playbook: 
 
-![](./ansible-playbook-execution-vlan.png)
+![]({{ site.baseurl }}/images/ansible-playbook-execution-vlan.png)
 
 Validating that the VLAN is created: 
 
-![](./ansible-validate-changes-vlan.png)
+![]({{ site.baseurl }}/images/ansible-validate-changes-vlan.png)
 
