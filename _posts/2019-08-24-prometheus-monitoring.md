@@ -112,7 +112,7 @@ Kubernetes cluster details:
 
 ![]({{ site.baseurl }}/images/prometheus-grafana-kubernetes.png)
 
-CLuster nodes details:
+Cluster nodes details:
 
 ![]({{ site.baseurl }}/images/prometheus-grafana-nodes.png)
 
