@@ -5,6 +5,7 @@ layout: post
 description: Ansible playbooks for configuring Cisco UCS Manager.  
 thumbnail: " "
 --- 
+Ansible playbooks for configuring Cisco UCS Manager. 
 
 ## Getting Started
 The Cisco Unified Computing System (UCS) is an architecture data center server platform composed of computing hardware, virtualization support, switching fabric, and management software. 
