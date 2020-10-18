@@ -5,8 +5,10 @@ layout: post
 description: Extinguishing the fire before CEOs wake up. 
 tags: ['monitoring']
 --- 
+Prometheus is an open source monitoring and alerting toolkit for containers and microservices
+
 ## Introduction
-Prometheus is an open source monitoring and alerting toolkit for containers and microservices. Based on the organizations that have adopted it, Prometheus has become the mainstream open source monitoring tool of choice for those that lean heavily on containers and microservices. Prometheus is part of the Cloud Native Computing Foundation. 
+Based on the organizations that have adopted it, Prometheus has become the mainstream open source monitoring tool of choice for those that lean heavily on containers and microservices. Prometheus is part of the Cloud Native Computing Foundation. 
 The Prometheus ecosystem consists of multiple components, many of which are optional:
 the main Prometheus server which gathers and stores time series data.
 client libraries for instrumenting application code.
