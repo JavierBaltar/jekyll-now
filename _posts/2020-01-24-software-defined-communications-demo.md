@@ -15,7 +15,7 @@ There are several endpoint modules that come with FreeSWITCH, which implement se
 
 The following demo uses FreeSWITCH, NGINX, PHP and a MySQL backend database to manage SIP client registrations. The beauty of the setup is decoupling components: SIP server, webserver and database are deployed in different instances so flexibility and operability are enhanced. 
 
-![https://youtu.be/JecE0N0Mnr4](./software-defined-comms-freeswitch-xml-curl-module.png "FreeSWITCH module demo")
+![]({{ site.baseurl }}/images/software-defined-comms-freeswitch-xml-curl-module.png "FreeSWITCH module demo")
 [Watch the FreeSWITCH module demo](https://youtu.be/JecE0N0Mnr4)
 
 
@@ -24,7 +24,7 @@ The following demo uses FreeSWITCH, NGINX, PHP and a MySQL backend database to m
 Kamailio is an open source SIP server that is a suitable option for SIP load balancing across multiple softswitches such as Asterisk. The following demo briefly describes how to scale a setup of Docker containers running Asterisk. For service discovery purposes, Consul will provide to Kamailio the list of available backend Asterisk servers in order to route the SIP messages properly. Furthermore, you can scale up and down the number of Asterisk containers giving the foundation of a dynamic environment. 
 
 
-![https://youtu.be/qo3LRqw5xG4](./software-defined-comms-scaling-sip-servers.png "Scaling SIP demo")
+![]({{ site.baseurl }}/images/software-defined-comms-scaling-sip-servers.png "Scaling SIP demo")
 [Watch the scaling SIP containers demo](https://youtu.be/qo3LRqw5xG4)
  
 
