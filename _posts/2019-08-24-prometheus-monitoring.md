@@ -15,7 +15,7 @@ special-purpose exporters for services like HAProxy, StatsD, Graphite, etc.
 an alertmanager to handle alerts.
 various support tools.
 
-![](./prometheus-architecture.png)
+![]({{ site.baseurl }}/images/prometheus-architecture.png)
 
 Please find further details at: https://prometheus.io/docs/introduction/overview/ 
 
@@ -24,28 +24,28 @@ An exporter is nothing more than a piece of software that collects data from a s
 When the exporter starts, it binds to a configured port and exposes the internal state of whatever is being collected in an HTTP endpoint of your choosing (the default is /metrics). The instrumentation data is collected when an HTTP GET request is made to the configured endpoint. For example, node exporter, one of the most commonly used exporters, relies on a number of kernel statistics to present data such as disk I/O, CPU, memory, network, filesystem usage, and much, much more. Every single time that endpoint is scraped, the information is quickly gathered and exposed in a synchronous operation.
 If you are the one writing the service, the best option is to instrument the code directly using a Prometheus client library. There are official client libraries available for the following programming languages: Python, Java, Node.js, etc. 
 
-![](./prometheus-blocks.png)
+![]({{ site.baseurl }}/images/prometheus-blocks.png)
 
 ### Alert Manager
 Alertmanager is a service that receives HTTP POST requests from Prometheus servers via its API, which it then deduplicates and acts on by following a predefined set of routes. Alertmanager also exposes a web interface to allow, for instance, the visualization and silencing of firing alerts or applying inhibition rules for them.
 There are multiple out-of-the-box integrations available for the most common use cases, such as the following: email, Slack, etc. 
 
-![](./prometheus-alert-manager.png)
+![]({{ site.baseurl }}/images/prometheus-alert-manager.png)
 
 ## Visualisation 
 As mentioned above, Prometheus ships its own Web UI for exporting and visualising data.
 
-![](./prometheus-visualization.png)
+![]({{ site.baseurl }}/images/prometheus-visualization.png)
 
 Prometheus provides this web UI for running basic queries located at http://<your_server_IP>:9090/.
 If you want to see a list of metrics sources, go to the Status  > Service Discovery page. Here, you will find a list of all services that are being monitored. 
 
-![](./prometheus-service-discovery.png)
+![]({{ site.baseurl }}/images/prometheus-service-discovery.png)
 
 
 The default path /metrics displays the metrics available:
 
-![](./prometheus-metrics.png)
+![]({{ site.baseurl }}/images/prometheus-metrics.png)
 
 The Prometheus server collects metrics and stores them in a time series database. Individual metrics are identified with names such as "node_filesystem_avail". A metric may have a number of “labels” attached to it, to distinguish it from other similar sources of metrics. 
 In PromQL (Prometheus Query Language), an expression or subexpression should always evaluate to one of the following data types:
@@ -56,12 +56,12 @@ String — A string value. String literals can be enclosed between single quotes
 
 As an example, we have to find out the "node_filesystem_files" on a system. This metric is available as "node_filesystem_files". Type this in the “Expression” field and hit Enter.
 
-![](./prometheus-query.png)
+![]({{ site.baseurl }}/images/prometheus-query.png)
 
 
 You can also get a graph of the data:
 
-![](./prometheus-graph.png)
+![]({{ site.baseurl }}/images/prometheus-graph.png)
 
 In most of the cases, Prometheus is deployed alongside with Grafana in order to provide an enhanced UI (see Grafana section below). 
 
@@ -84,7 +84,7 @@ kubectl port-forward -n prometheus deploy/prometheus-server 8080:9090
 ```
 Browse the following URL: http://localhost:8080/targets/ , which displays the current targets. 
 
-![](./prometheus-targets.png)
+![]({{ site.baseurl }}/images/prometheus-targets.png)
 
 ## Grafana
 Grafana is an open source, feature rich metrics dashboard and graph editor.
@@ -106,18 +106,18 @@ kubectl get secret \
 ```
 There are several dashboards, which can be added in order to monitor Prometheus and Kubernetes as shown below:
 
-![](./prometheus-grafana.png)
+![]({{ site.baseurl }}/images/prometheus-grafana.png)
 
 Kubernetes cluster details:
 
-![](./prometheus-grafana-kubernetes.png)
+![]({{ site.baseurl }}/images/prometheus-grafana-kubernetes.png)
 
 CLuster nodes details:
 
-![](./prometheus-grafana-nodes.png)
+![]({{ site.baseurl }}/images/prometheus-grafana-nodes.png)
 
 
 You can set up several notification channel such as email, webhook, Teams, Slack, etc. for the alarms:
 
-![](./prometheus-grafana-notifications.png)
+![]({{ site.baseurl }}/images/prometheus-grafana-notifications.png)
 
