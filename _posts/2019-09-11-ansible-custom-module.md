@@ -1,9 +1,10 @@
 ---
-title: Build an Ansible custom module in 15 minutes
+title: Build an Ansible custom module
 date: "2019-09-11T18:40:32.169Z"
 layout: post
 description: A quick introduction on Ansible custom modules. 
 ---
+Develop your own Ansible module in 15 minutes.
 
 ## Getting Started
 The list is of Ansible modules is extensive (see Related section below), but it might be the case where you have automate a task, which is not supported by Ansible out of the box. 
