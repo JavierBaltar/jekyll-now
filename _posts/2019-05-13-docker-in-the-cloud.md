@@ -76,7 +76,7 @@ To containerize the sample app, create a new file named Dockerfile in the same d
 Let's build the image:
 ```docker build -t quickstart-image . ```
 
-![](./docker-build.png)
+![]({{ site.baseurl }}/images/docker-build.png)
 
 
 Before you push the Docker image to Container Registry, you need to tag it with its registry name. Tagging the Docker image with a registry name configures the docker push command to push the image to a specific location. For this quickstart, the host location is gcr.io.
@@ -99,11 +99,11 @@ Once docker has been configured to use gcloud as a credential helper, and the lo
 To push the Docker image, run the following command:
 ```docker push gcr.io/[PROJECT-ID]/quickstart-image:tag```
 
-![](./docker-image-push.png)
+![]({{ site.baseurl }}/images/docker-image-push.png)
 
 The image is added to your Container Registry. 
 
-![](./docker-image-container-registry.png)
+![]({{ site.baseurl }}/images/docker-image-container-registry.png)
 
 ## Pull Docker images
 To pull the image from Container Registry onto your local machine, run the following command:
@@ -115,11 +115,11 @@ Google Cloud Run provides a platform to quickly run and test your containers wit
 
 
 Go to Cloud Run console and click on Create Service:
-![](./cloud-run-service.png)
+![]({{ site.baseurl }}/images/cloud-run-service.png)
 
 Choose the container image you have just created above and select a service name and location (at the moment of writing, only us-central1 is supported). 
 Click on Create.
-![](./cloud-run-create-service.png)
+![]({{ site.baseurl }}/images/cloud-run-create-service.png)
 
 
 In few seconds, your service is ready and the public access URL is available. 
@@ -164,7 +164,7 @@ NOTE: You can also tag your image before pushing: docker tag IMAGE_NAME YOUR_DOC
 
 Pushing images to Dockerhub follows the same procedure completed for Google Cloud Container Registry.
 
-![](./docker-push.png)
+![]({{ site.baseurl }}/images/docker-push.png)
 
 Your image is pushed to the repository.
 
@@ -182,11 +182,11 @@ Fill in the environment information by choosing a domain. Under base configurati
 
 You have to tell Elasticbeanstalk where your application code is stored. In this case, we are creating a file which points to the Docker Hub repository image:
 
-![](./docker-run-json.png)
+![]({{ site.baseurl }}/images/docker-run-json.png)
 
 Upload the file described above. Click on Create environment. It takes some time to set up your application. 
 Once the application is OK, you can click on the URL and browse your app.
-![](./EB-docker-app.png)
+![]({{ site.baseurl }}/images/EB-docker-app.png)
 
 The "Hello World" message is displayed.
 
