@@ -4,6 +4,8 @@ date: "2019-10-10T21:32:37.121Z"
 layout: post
 description: Detect and protect against vulnerabilities and malware for your cloud environment.
 --- 
+Cloud intrusion detection system (IDS) and intrusion prevention system (IPS)
+
 ## Overview
 Intrusion detection is the process of monitoring the events occurring in your network and analyzing them for signs of possible incidents or threats to your security policies. 
 Intrusion prevention is the process of performing intrusion detection and then stopping the detected incidents. These security measures are available as intrusion detection systems (IDS) and intrusion prevention systems (IPS), which become part of your network to detect and stop potential incidents.
