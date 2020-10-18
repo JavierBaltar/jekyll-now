@@ -5,7 +5,7 @@ layout: post
 description: Infrastructure as code in AWS with Terraform
 --- 
 
-In this new entry, I initiate a series of posts aimed at bringing basic knowledge through to develope infrastructure as code with [Ansible] (https://www.ansible.com/resources/get-started) and [Terraform] (https://www.terraform.io).  
+In this new entry, I initiate a series of posts aimed at bringing basic knowledge through to develope infrastructure as code with [Ansible](https://www.ansible.com/resources/get-started) and [Terraform](https://www.terraform.io).  
 
 As a first step, the architecture depicted below will be rolled out. This means: 
 
