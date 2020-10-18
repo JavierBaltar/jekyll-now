@@ -4,6 +4,7 @@ date: "2019-05-13T22:40:32.169Z"
 layout: post
 description: Different ways to launch Docker containers in Cloud providers.
 ---
+Different ways to launch Docker containers in Cloud providers.
 
 ## Introduction
 The key benefit of Docker is that it allows users to package an application with all of its dependencies into a standardized unit for software development. Unlike virtual machines, containers do not have the high overhead and hence enable more efficient usage of the underlying system and resources.
