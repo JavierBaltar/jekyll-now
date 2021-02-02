@@ -11,7 +11,7 @@ As a cloud consultant, I help business to innovate and to improve their competit
 
 I have a proven track record in cloud computing architectures, unified communications, monitoring solutions, infrastructure as code and CICD strategies implementation for micro services stacks. I am a collaborative team player who works diligently to ensure projects are completed efficiently and accurately.
 
-Building applications for the cloud is more than just learning a new set of technologies or a new programming language. It involves continually seeking out new ways to expand my knowledge and abilities. I am looking forward for Google Cloud Professional Cloud Architect certification and consolidating Big Data solutions and platforms skills.
+Building applications for the cloud is more than just learning a new set of technologies or a new programming language. It involves continually seeking out new ways to expand my knowledge and abilities. I am looking forward for consolidating Big Data solutions and platforms skills.
 
 ### Contact me
 
