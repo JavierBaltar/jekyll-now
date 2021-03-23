@@ -10,7 +10,7 @@ Ansible AWX training guide
 The goal of this post is to share hands on training notes about Ansible and AWX. 
 
 
-## FreeSWITCH Modules in Action
+## Documentation
 
-![]({{ site.baseurl }}/images/ "Download the training guide")
+![]({{ site.baseurl }}/docs/Ansible_AWX_Getting_Started.pdf "Download the training guide")
 [Download the training guide]
