@@ -11,6 +11,4 @@ The goal of this post is to share hands on training notes about Ansible and AWX.
 
 
 ## Documentation
-
-![]({{ site.baseurl }}/docs/Ansible_AWX_Getting_Started.pdf "Download the training guide")
-[Download the training guide]
+[Download the training guide](https://github.com/JavierBaltar/javierbaltar.github.io/blob/master/docs/Ansible_AWX_Getting_Started.pdf)
